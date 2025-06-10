@@ -232,10 +232,10 @@ export function FeaturesSection() {
               <div className="relative group">
                 <div className="absolute inset-0 bg-gradient-to-r from-orange-400/20 to-amber-400/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
                 
-                {/* Dashboard stack with overlapping effect */}
+                {/* Dashboard stack with mobile optimization */}
                 <div className="relative">
                   {/* Main dashboard (back) */}
-                  <div className="relative transform rotate-2 hover:rotate-1 transition-all duration-500">
+                  <div className="relative transform rotate-1 sm:rotate-2 hover:rotate-1 transition-all duration-500">
                     <Image
                       src="/images/features/main-dashboard.png"
                       alt="Main dashboard interface"
@@ -246,27 +246,27 @@ export function FeaturesSection() {
                     />
                   </div>
                   
-                  {/* Products page (middle) */}
-                  <div className="absolute -top-8 -left-8 transform -rotate-1 hover:rotate-0 transition-all duration-500 z-10">
+                  {/* Products page (middle) - adjusted for mobile */}
+                  <div className="absolute -top-4 -left-4 sm:-top-8 sm:-left-8 transform -rotate-1 hover:rotate-0 transition-all duration-500 z-10">
                     <Image
                       src="/images/features/products-dashboard.png"
                       alt="Products page interface"
                       width={450}
                       height={300}
-                      className="w-3/4 h-auto rounded-2xl shadow-xl border border-white/50 hover:scale-105 transition-all duration-300"
-                      sizes="(max-width: 768px) 75vw, 37.5vw"
+                      className="w-2/3 sm:w-3/4 h-auto rounded-2xl shadow-xl border border-white/50 hover:scale-105 transition-all duration-300"
+                      sizes="(max-width: 768px) 67vw, 37.5vw"
                     />
                   </div>
                   
-                  {/* Balance page (front) */}
-                  <div className="absolute -bottom-6 -right-6 transform rotate-3 hover:rotate-1 transition-all duration-500 z-20">
+                  {/* Balance page (front) - adjusted for mobile */}
+                  <div className="absolute -bottom-3 -right-3 sm:-bottom-6 sm:-right-6 transform rotate-2 sm:rotate-3 hover:rotate-1 transition-all duration-500 z-20">
                     <Image
                       src="/images/features/balance-dashboard.png"
                       alt="Balance page interface"
                       width={350}
                       height={250}
-                      className="w-3/5 h-auto rounded-2xl shadow-xl border border-white/50 hover:scale-110 transition-all duration-300"
-                      sizes="(max-width: 768px) 60vw, 30vw"
+                      className="w-1/2 sm:w-3/5 h-auto rounded-2xl shadow-xl border border-white/50 hover:scale-110 transition-all duration-300"
+                      sizes="(max-width: 768px) 50vw, 30vw"
                     />
                   </div>
                 </div>

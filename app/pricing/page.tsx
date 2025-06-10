@@ -108,18 +108,18 @@ export default function PricingPage() {
         </div>
 
         <div className="container relative z-10">
-          <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             {pricingPlans.map((plan, index) => (
               <div key={plan.name} className={`relative group ${plan.popular ? 'lg:-mt-8' : ''}`}>
                 {plan.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-20">
-                    <div className="bg-gradient-to-r from-orange-500 to-amber-600 text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg">
+                    <div className="bg-gradient-to-r from-orange-500 to-amber-600 text-white px-4 sm:px-6 py-2 rounded-full text-xs sm:text-sm font-bold shadow-lg">
                       {t.pricing.mostPopular}
                     </div>
                   </div>
                 )}
                 
-                <div className={`bg-white/80 backdrop-blur-sm p-8 rounded-3xl shadow-lg border transition-all duration-500 hover:-translate-y-2 h-full ${
+                <div className={`bg-white/80 backdrop-blur-sm p-6 sm:p-8 rounded-3xl shadow-lg border transition-all duration-500 hover:-translate-y-2 h-full ${
                   plan.popular 
                     ? 'border-orange-300/50 hover:shadow-2xl hover:border-orange-400/50' 
                     : 'border-slate-200/50 hover:shadow-xl hover:border-orange-300/30'

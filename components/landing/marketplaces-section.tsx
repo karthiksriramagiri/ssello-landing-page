@@ -52,61 +52,27 @@ export function MarketplacesSection() {
         </div>
         
         {/* Enhanced Infinite Carousel */}
-        <div className="relative">
-          {/* Enhanced gradient overlays for seamless effect */}
-          <div className="absolute left-0 top-0 bottom-0 w-40 bg-gradient-to-r from-white via-orange-50/30 to-transparent z-10 pointer-events-none"></div>
-          <div className="absolute right-0 top-0 bottom-0 w-40 bg-gradient-to-l from-white via-orange-50/30 to-transparent z-10 pointer-events-none"></div>
-          
-          <div className="overflow-hidden">
-            <div className="flex animate-scroll-infinite">
-              {/* First set of logos */}
-              {marketplaces.map((market, index) => (
-                <div
-                  key={`first-${index}`}
-                  className="flex-shrink-0 mx-8 group"
-                >
-                  <div className="w-48 h-28 bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg border border-orange-200/30 flex items-center justify-center p-4 hover:scale-105 hover:shadow-xl transition-all duration-500 group">
-                    <div className="absolute inset-0 bg-gradient-to-r from-orange-400/5 to-amber-400/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div className="relative max-w-7xl mx-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6 lg:gap-8">
+            {marketplaces.map((marketplace, index) => (
+              <div key={marketplace.name} className="group relative">
+                <div className="bg-white/90 backdrop-blur-sm p-4 sm:p-6 rounded-2xl shadow-lg border border-orange-200/30 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-orange-400/50">
+                  <div className="aspect-square flex items-center justify-center mb-3 sm:mb-4">
                     <Image
-                      src={market.logo}
-                      alt={`${market.name} logo`}
-                      width={180}
-                      height={90}
-                      className="object-contain w-full h-full filter grayscale-0 group-hover:brightness-110 transition-all duration-300 relative z-10"
-                      sizes="180px"
+                      src={marketplace.logo}
+                      alt={`${marketplace.name} logo`}
+                      width={120}
+                      height={80}
+                      className="object-contain transition-all duration-300 group-hover:scale-110 w-16 h-10 sm:w-20 sm:h-12"
+                      sizes="(max-width: 640px) 80px, (max-width: 768px) 100px, 120px"
                     />
                   </div>
-                  <div className="text-center mt-4">
-                    <p className="text-sm font-semibold text-slate-700 group-hover:text-orange-600 transition-colors duration-300">{market.name}</p>
-                    <p className="text-xs text-slate-500">{market.location}</p>
-                  </div>
+                  <p className="text-center text-xs sm:text-sm font-semibold text-slate-700 group-hover:text-orange-600 transition-colors duration-300">
+                    {marketplace.name}
+                  </p>
                 </div>
-              ))}
-              
-              {/* Duplicate set for seamless infinite scroll */}
-              {marketplaces.map((market, index) => (
-                <div
-                  key={`second-${index}`}
-                  className="flex-shrink-0 mx-8 group"
-                >
-                  <div className="w-48 h-28 bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg border border-orange-200/30 flex items-center justify-center p-4 hover:scale-105 hover:shadow-xl transition-all duration-500 group">
-                    <div className="absolute inset-0 bg-gradient-to-r from-orange-400/5 to-amber-400/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    <Image
-                      src={market.logo}
-                      alt={`${market.name} logo`}
-                      width={180}
-                      height={90}
-                      className="object-contain w-full h-full filter grayscale-0 group-hover:brightness-110 transition-all duration-300 relative z-10"
-                      sizes="180px"
-                    />
-                  </div>
-                  <div className="text-center mt-4">
-                    <p className="text-sm font-semibold text-slate-700 group-hover:text-orange-600 transition-colors duration-300">{market.name}</p>
-                    <p className="text-xs text-slate-500">{market.location}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
         

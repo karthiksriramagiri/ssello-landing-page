@@ -308,15 +308,15 @@ export default function AboutPage() {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             {values.map((value, index) => (
               <div key={value.title} className="group">
-                <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-orange-200/50 text-center hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 min-h-[280px] flex flex-col">
+                <div className="bg-white/80 backdrop-blur-sm p-6 sm:p-8 rounded-2xl shadow-lg border border-orange-200/50 text-center hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 min-h-[280px] flex flex-col">
                   <div className={`flex items-center justify-center w-16 h-16 bg-gradient-to-r ${value.gradient} rounded-2xl mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
                     <value.icon className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-foreground mb-4">{value.title}</h3>
-                  <p className="text-slate-600 leading-relaxed flex-1">{value.description}</p>
+                  <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">{value.title}</h3>
+                  <p className="text-sm sm:text-base text-slate-600 leading-relaxed flex-1">{value.description}</p>
                 </div>
               </div>
             ))}

@@ -120,24 +120,24 @@ export function HeroSection() {
             </div>
 
             {/* Enhanced Animated Stats section */}
-            <div className="grid grid-cols-3 gap-6 pt-8">
-              <div className="text-center p-6 bg-white/80 backdrop-blur-sm rounded-2xl border border-orange-200/50 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
-                <div className="text-3xl font-bold bg-gradient-to-r from-orange-500 to-amber-600 bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 pt-8">
+              <div className="text-center p-4 sm:p-6 bg-white/80 backdrop-blur-sm rounded-2xl border border-orange-200/50 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
+                <div className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-orange-500 to-amber-600 bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300">
                   <AnimatedCounter end={700} suffix="M+" />
                 </div>
-                <div className="text-sm text-slate-600 font-medium">{t.hero.consumers}</div>
+                <div className="text-xs sm:text-sm text-slate-600 font-medium">{t.hero.consumers}</div>
               </div>
-              <div className="text-center p-6 bg-white/80 backdrop-blur-sm rounded-2xl border border-amber-200/50 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
-                <div className="text-3xl font-bold bg-gradient-to-r from-amber-500 to-orange-600 bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300">
+              <div className="text-center p-4 sm:p-6 bg-white/80 backdrop-blur-sm rounded-2xl border border-amber-200/50 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
+                <div className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-amber-500 to-orange-600 bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300">
                   <AnimatedCounter end={13} suffix="+" />
                 </div>
-                <div className="text-sm text-slate-600 font-medium">{t.hero.marketplaces}</div>
+                <div className="text-xs sm:text-sm text-slate-600 font-medium">{t.hero.marketplaces}</div>
               </div>
-              <div className="text-center p-6 bg-white/80 backdrop-blur-sm rounded-2xl border border-orange-200/50 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
-                <div className="text-3xl font-bold bg-gradient-to-r from-orange-500 to-amber-600 bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300">
+              <div className="text-center p-4 sm:p-6 bg-white/80 backdrop-blur-sm rounded-2xl border border-amber-200/50 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
+                <div className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-orange-500 to-amber-600 bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300">
                   <AnimatedCounter end={5} suffix="+" />
                 </div>
-                <div className="text-sm text-slate-600 font-medium">{t.hero.countries}</div>
+                <div className="text-xs sm:text-sm text-slate-600 font-medium">{t.hero.countries}</div>
               </div>
             </div>
           </div>

@@ -70,29 +70,29 @@ export function TestimonialsSection() {
 
         <div className="relative max-w-4xl mx-auto">
           {/* Main testimonial display */}
-          <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12 border border-orange-200/30 relative overflow-hidden">
+          <div className="bg-white rounded-3xl shadow-2xl p-6 sm:p-8 md:p-12 border border-orange-200/30 relative overflow-hidden">
             {/* Quote icon */}
-            <div className="absolute top-8 right-8 opacity-10">
-              <Quote className="w-20 h-20 text-orange-500" />
+            <div className="absolute top-6 sm:top-8 right-6 sm:right-8 opacity-10">
+              <Quote className="w-16 sm:w-20 h-16 sm:h-20 text-orange-500" />
             </div>
 
-            <div className="text-center space-y-8">
+            <div className="text-center space-y-6 sm:space-y-8">
               {/* Testimonial content */}
-              <blockquote className="text-xl md:text-2xl text-slate-700 leading-relaxed italic max-w-3xl mx-auto">
+              <blockquote className="text-lg sm:text-xl md:text-2xl text-slate-700 leading-relaxed italic max-w-3xl mx-auto">
                 "{testimonials[currentIndex].quote}"
               </blockquote>
               
-              <div className="flex items-center justify-center gap-4">
-                <div className="w-16 h-16 bg-gradient-to-br from-orange-100 to-amber-100 rounded-full flex items-center justify-center">
-                  <span className="text-orange-600 font-bold text-xl">
+              <div className="flex items-center justify-center gap-3 sm:gap-4">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-orange-100 to-amber-100 rounded-full flex items-center justify-center">
+                  <span className="text-orange-600 font-bold text-lg sm:text-xl">
                     {testimonials[currentIndex].name.charAt(0)}
                   </span>
                 </div>
                 <div className="text-left">
-                  <div className="font-semibold text-slate-900 text-lg">
+                  <div className="font-semibold text-slate-900 text-base sm:text-lg">
                     {testimonials[currentIndex].name}
                   </div>
-                  <div className="text-sm text-slate-600">
+                  <div className="text-xs sm:text-sm text-slate-600">
                     {testimonials[currentIndex].title}
                   </div>
                 </div>
