@@ -26,7 +26,12 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "ssello - Expand into LATAM with one click",
   description: "The complete e-commerce solution for ambitious brands. Expand your reach across 15+ marketplaces, manage operations seamlessly, and accelerate growth in Latin America's fastest-growing markets.",
-  generator: 'v0.dev'
+  generator: 'v0.dev',
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  },
 }
 
 export default function RootLayout({

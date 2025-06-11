@@ -11,9 +11,11 @@ import { useToast } from "@/components/ui/use-toast"
 import { Phone, Mail, Building, Sparkles, Send, Calendar, MapPin } from "lucide-react"
 import { useState, type FormEvent } from "react"
 import { useLanguage } from "@/contexts/language-context"
+import { useRouter } from "next/navigation"
 
 export default function ContactPage() {
   const { toast } = useToast()
+  const router = useRouter()
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -92,18 +94,11 @@ export default function ContactPage() {
       // Send to Slack webhook
       await sendSlackWebhook(formData)
       
-      toast({
-        title: "Message Sent!",
-        description: "Thanks for reaching out. We'll get back to you soon.",
-      })
-      setFormData({ name: "", email: "", subject: "", message: "" })
+      // Redirect to thank you page instead of showing toast
+      router.push('/thank-you?type=contact')
     } catch (error) {
-      // Even if webhook fails, show success to user
-      toast({
-        title: "Message Sent!",
-        description: "Thanks for reaching out. We'll get back to you soon.",
-      })
-      setFormData({ name: "", email: "", subject: "", message: "" })
+      // Even if webhook fails, redirect to thank you page
+      router.push('/thank-you?type=contact')
     } finally {
       setIsSubmitting(false)
     }

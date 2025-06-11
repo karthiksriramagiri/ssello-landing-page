@@ -124,35 +124,11 @@ export default function SignUpPage() {
       // Send to Slack webhook
       await sendSlackWebhook(formData)
       
-      toast({
-        title: "Registration Successful!",
-        description: "Welcome to ssello! Our team will contact you soon to get you started.",
-      })
-      
-      // Reset form
-      setFormData({
-        firstName: "",
-        lastName: "",
-        email: "",
-        companyName: "",
-        shippingLocations: [],
-        productType: "",
-      })
+      // Redirect to thank you page instead of showing toast
+      window.location.href = '/thank-you?type=signup'
     } catch (error) {
-      toast({
-        title: "Registration Successful!",
-        description: "Welcome to ssello! Our team will contact you soon to get you started.",
-      })
-      
-      // Reset form
-      setFormData({
-        firstName: "",
-        lastName: "",
-        email: "",
-        companyName: "",
-        shippingLocations: [],
-        productType: "",
-      })
+      // Even if webhook fails, redirect to thank you page
+      window.location.href = '/thank-you?type=signup'
     } finally {
       setIsSubmitting(false)
     }
