@@ -97,22 +97,22 @@ export function HeroSection() {
               </p>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-6">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-orange-500 to-amber-600 hover:from-orange-600 hover:to-amber-700 text-white px-12 py-6 text-lg rounded-2xl font-bold shadow-xl hover:shadow-2xl transition-all duration-300 group"
+                className="bg-gradient-to-r from-orange-500 to-amber-600 hover:from-orange-600 hover:to-amber-700 text-white px-8 sm:px-12 py-4 sm:py-6 text-base sm:text-lg rounded-xl sm:rounded-2xl font-bold shadow-xl hover:shadow-2xl transition-all duration-300 group w-full sm:w-auto"
                 asChild
               >
                 <Link href="/signup">
-                  <Sparkles className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform duration-300" />
+                  <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 mr-2 group-hover:rotate-12 transition-transform duration-300" />
                   {t.hero.startSelling}
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+                  <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </Link>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                className="px-10 py-6 text-lg rounded-2xl border-2 border-orange-300 text-orange-700 hover:bg-orange-50 hover:border-orange-400 font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+                className="px-6 sm:px-10 py-4 sm:py-6 text-base sm:text-lg rounded-xl sm:rounded-2xl border-2 border-orange-300 text-orange-700 hover:bg-orange-50 hover:border-orange-400 font-semibold shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto"
                 asChild
               >
                 <Link href="https://calendly.com/official-ssello" target="_blank" rel="noopener noreferrer">{t.hero.scheduleCall}</Link>

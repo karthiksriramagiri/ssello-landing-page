@@ -57,50 +57,52 @@ export function MarketplacesSection() {
           <div className="flex animate-scroll-infinite">
             {/* First set of logos */}
             {[...marketplaces, ...marketplaces].map((marketplace, index) => (
-              <div key={`${marketplace.name}-${index}`} className="group relative flex-shrink-0 mx-4 w-48">
-                <div className="bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-orange-200/30 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-orange-400/50">
-                  <div className="aspect-square flex items-center justify-center mb-4">
+              <div key={`${marketplace.name}-${index}`} className="group relative flex-shrink-0 mx-2 sm:mx-3 w-32 sm:w-36">
+                <div className="bg-white/90 backdrop-blur-sm p-2 sm:p-3 rounded-xl shadow-md border border-orange-200/30 hover:shadow-xl transition-all duration-300 -translate-y-1 hover:-translate-y-2 hover:border-orange-400/50">
+                  <div className="flex items-center justify-center mb-1 sm:mb-2 h-16 sm:h-20">
                     <Image
                       src={marketplace.logo}
                       alt={`${marketplace.name} logo`}
-                      width={120}
-                      height={80}
-                      className="object-contain transition-all duration-300 group-hover:scale-110 max-w-full max-h-full"
-                      sizes="120px"
+                      width={100}
+                      height={75}
+                      className="object-contain transition-all duration-300 group-hover:scale-105 max-w-full max-h-full w-20 h-15 sm:w-24 sm:h-18"
+                      sizes="(max-width: 640px) 80px, 100px"
                     />
                   </div>
-                  <p className="text-center text-sm font-semibold text-slate-700 group-hover:text-orange-600 transition-colors duration-300">
-                    {marketplace.name}
-                  </p>
-                  <p className="text-center text-xs text-slate-500 mt-1">
-                    {marketplace.location}
-                  </p>
+                  <div className="pb-1 sm:pb-2">
+                    <p className="text-center text-xs sm:text-sm font-medium text-slate-700 group-hover:text-orange-600 transition-colors duration-300 leading-tight">
+                      {marketplace.name}
+                    </p>
+                    <p className="text-center text-[10px] sm:text-xs text-slate-500 mt-0.5">
+                      {marketplace.location}
+                    </p>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
           
           {/* Gradient fade-out effects */}
-          <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-white via-orange-50/30 to-transparent z-10"></div>
-          <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-white via-orange-50/30 to-transparent z-10"></div>
+          <div className="absolute inset-y-0 left-0 w-8 sm:w-16 bg-gradient-to-r from-white via-orange-50/30 to-transparent z-10"></div>
+          <div className="absolute inset-y-0 right-0 w-8 sm:w-16 bg-gradient-to-l from-white via-orange-50/30 to-transparent z-10"></div>
         </div>
         
         {/* Enhanced call to action button */}
-        <div className="text-center mt-16">
+        <div className="text-center mt-12 sm:mt-16 px-4">
           <Button
             size="lg"
-            className="bg-gradient-to-r from-orange-500 to-amber-600 hover:from-orange-600 hover:to-amber-700 text-white px-12 py-6 text-lg rounded-2xl font-bold shadow-xl hover:shadow-2xl transition-all duration-300 group"
+            className="bg-gradient-to-r from-orange-500 to-amber-600 hover:from-orange-600 hover:to-amber-700 text-white px-6 sm:px-12 py-3 sm:py-6 text-base sm:text-lg rounded-xl sm:rounded-2xl font-bold shadow-xl hover:shadow-2xl transition-all duration-300 group w-full sm:w-auto"
             asChild
           >
             <Link href="/marketplaces">
-              <div className="flex items-center gap-3">
-                <div className="flex -space-x-2">
-                  <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-white text-sm font-bold">💰</div>
-                  <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-white text-sm font-bold">📈</div>
-                  <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-white text-sm font-bold">🚀</div>
+              <div className="flex items-center justify-center gap-2 sm:gap-3">
+                <div className="hidden sm:flex -space-x-2">
+                  <div className="w-6 h-6 sm:w-8 sm:h-8 bg-white/20 rounded-full flex items-center justify-center text-white text-xs sm:text-sm font-bold">💰</div>
+                  <div className="w-6 h-6 sm:w-8 sm:h-8 bg-white/20 rounded-full flex items-center justify-center text-white text-xs sm:text-sm font-bold">📈</div>
+                  <div className="w-6 h-6 sm:w-8 sm:h-8 bg-white/20 rounded-full flex items-center justify-center text-white text-xs sm:text-sm font-bold">🚀</div>
                 </div>
-                <span>{t.common.readyToExpandPlatforms}</span>
-                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+                <span className="text-center">{t.common.readyToExpandPlatforms}</span>
+                <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform duration-300 flex-shrink-0" />
               </div>
             </Link>
           </Button>
