@@ -221,9 +221,9 @@ export const translations = {
         jason: {
           name: "Jason Kim",
           role: "COO & Co-Founder",
-          education: "Economics & Business Administration – University of Michigan Ann Arbor", 
+          education: "Economics – University of Michigan Ann Arbor", 
           highlights: [
-            "3-time successful exit: B2C Online Mall, B2B Wholesale Platform (3PL), QuickCommerce Platform",
+            "3-time successful exit: Cosmetic Beauty Brand, B2B Platform (Wholesale/3PL), QuickCommerce Platform",
             "Deep familiarity with retail logistics backend operations",
             "Expert in 3PL coordination, warehouse routing, last-mile delivery",
             "API-driven integrations with global marketplaces"
