@@ -5,6 +5,7 @@ import { Building, Target, Users, Handshake, Globe, Sparkles, ArrowRight } from 
 import Link from "next/link"
 import Image from "next/image"
 import { useLanguage } from "@/contexts/language-context"
+import { getCalendlyUrl } from "@/lib/calendly"
 
 export default function AboutPage() {
   const { t } = useLanguage()
@@ -364,7 +365,7 @@ export default function AboutPage() {
               className="border-white text-orange-600 hover:bg-white hover:text-orange-600 text-lg px-10 py-6 rounded-2xl font-semibold transition-all duration-300"
               asChild
             >
-              <Link href="https://calendly.com/official-ssello" target="_blank" rel="noopener noreferrer">
+              <Link href={getCalendlyUrl()} target="_blank" rel="noopener noreferrer">
                 {t.common.scheduleCall}
               </Link>
             </Button>

@@ -6,6 +6,7 @@ import { ArrowRight, Sparkles, Zap } from "lucide-react"
 import { useEffect, useState } from "react"
 import { useLanguage } from "@/contexts/language-context"
 import Image from "next/image"
+import { getCalendlyUrl } from "@/lib/calendly"
 
 function AnimatedCounter({ 
   end, 
@@ -115,7 +116,7 @@ export function HeroSection() {
                 className="px-6 sm:px-10 py-4 sm:py-6 text-base sm:text-lg rounded-xl sm:rounded-2xl border-2 border-orange-300 text-orange-700 hover:bg-orange-50 hover:border-orange-400 font-semibold shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto"
                 asChild
               >
-                <Link href="https://calendly.com/official-ssello" target="_blank" rel="noopener noreferrer">{t.hero.scheduleCall}</Link>
+                <Link href={getCalendlyUrl()} target="_blank" rel="noopener noreferrer">{t.hero.scheduleCall}</Link>
               </Button>
             </div>
 

@@ -7,6 +7,7 @@ import { Menu, X, Sparkles } from "lucide-react"
 import { useState } from "react"
 import { LanguageSwitcher } from "@/components/ui/language-switcher"
 import { useLanguage } from "@/contexts/language-context"
+import { getCalendlyUrl } from "@/lib/calendly"
 
 export function LandingHeader() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)

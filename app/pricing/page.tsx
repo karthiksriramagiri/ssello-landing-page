@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { CheckCircle, Star, ArrowRight, Sparkles, Zap, Users, Building2 } from "lucide-react"
 import Link from "next/link"
 import { useLanguage } from "@/contexts/language-context"
+import { getCalendlyUrl } from "@/lib/calendly"
 
 export default function PricingPage() {
   const { t } = useLanguage()
@@ -220,7 +221,7 @@ export default function PricingPage() {
               className="border-white text-orange-600 hover:bg-white hover:text-orange-600 text-lg px-10 py-6 rounded-2xl font-semibold transition-all duration-300"
               asChild
             >
-              <Link href="https://calendly.com/official-ssello" target="_blank" rel="noopener noreferrer">
+              <Link href={getCalendlyUrl()} target="_blank" rel="noopener noreferrer">
                 {t.common.talkToSales}
               </Link>
             </Button>

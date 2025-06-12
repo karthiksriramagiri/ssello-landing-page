@@ -5,6 +5,7 @@ import { CheckCircle, ArrowLeft, Mail, Calendar, Sparkles } from "lucide-react"
 import Link from "next/link"
 import { useSearchParams } from "next/navigation"
 import { Suspense } from "react"
+import { getCalendlyUrl } from "@/lib/calendly"
 
 function ThankYouContent() {
   const searchParams = useSearchParams()
@@ -156,7 +157,7 @@ function ThankYouContent() {
                 className="border-orange-300 text-orange-600 hover:bg-orange-50 px-10 py-6 text-lg rounded-2xl font-semibold transition-all duration-300"
                 asChild
               >
-                <Link href="https://calendly.com/official-ssello" target="_blank" rel="noopener noreferrer">
+                <Link href={getCalendlyUrl()} target="_blank" rel="noopener noreferrer">
                   <Calendar className="w-5 h-5 mr-2" />
                   Schedule a Call
                 </Link>

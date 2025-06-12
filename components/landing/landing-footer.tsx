@@ -4,6 +4,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Facebook, Twitter, Linkedin, Instagram, Youtube } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
+import { getCalendlyUrl } from "@/lib/calendly"
 
 export function LandingFooter() {
   const { t } = useLanguage()

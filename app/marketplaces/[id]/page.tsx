@@ -6,6 +6,7 @@ import { ArrowRight, ArrowLeft, Users, TrendingUp, Globe, ShoppingCart } from "l
 import Image from "next/image"
 import { notFound } from "next/navigation"
 import { useLanguage } from "@/contexts/language-context"
+import { getCalendlyUrl } from "@/lib/calendly"
 
 const marketplacesData = {
   "amazon-brazil": {
@@ -325,7 +326,7 @@ export default function MarketplacePage({ params }: { params: { id: string } }) 
                     className="w-full bg-gradient-to-r from-orange-500 to-amber-600 hover:from-orange-600 hover:to-amber-700 text-white rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-200"
                     asChild
                   >
-                    <Link href="/(dashboard)/dashboard">
+                    <Link href="/signup">
                       {t.marketplacePage.getStarted}
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Link>
@@ -336,7 +337,7 @@ export default function MarketplacePage({ params }: { params: { id: string } }) 
                     className="w-full mt-3 border-orange-600 text-orange-700 hover:bg-orange-600 hover:text-white rounded-xl transition-all duration-300"
                     asChild
                   >
-                    <Link href="https://calendly.com/official-ssello" target="_blank" rel="noopener noreferrer">
+                    <Link href={getCalendlyUrl()} target="_blank" rel="noopener noreferrer">
                       {t.marketplacePage.scheduleCall}
                     </Link>
                   </Button>
@@ -435,7 +436,7 @@ export default function MarketplacePage({ params }: { params: { id: string } }) 
                 className="bg-gradient-to-r from-orange-500 to-amber-600 hover:from-orange-600 hover:to-amber-700 text-white px-8 py-6 text-lg rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-200"
                 asChild
               >
-                <Link href="/(dashboard)/dashboard">
+                <Link href="/signup">
                   {t.marketplacePage.startSellingNow}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
@@ -446,7 +447,7 @@ export default function MarketplacePage({ params }: { params: { id: string } }) 
                 className="border-white text-orange-300 hover:bg-white hover:text-slate-900 px-8 py-6 text-lg rounded-xl font-semibold transition-all duration-300"
                 asChild
               >
-                <Link href="https://calendly.com/official-ssello" target="_blank" rel="noopener noreferrer">
+                <Link href={getCalendlyUrl()} target="_blank" rel="noopener noreferrer">
                   {t.marketplacePage.scheduleCall}
                 </Link>
               </Button>

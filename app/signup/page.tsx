@@ -10,6 +10,7 @@ import { useToast } from "@/components/ui/use-toast"
 import { Building, Sparkles, Send, Package, Globe } from "lucide-react"
 import { useState, type FormEvent } from "react"
 import Link from "next/link"
+import { getCalendlyUrl } from "@/lib/calendly"
 
 const shippingLocations = [
   { id: "usa", label: "USA" },
@@ -124,11 +125,11 @@ export default function SignUpPage() {
       // Send to Slack webhook
       await sendSlackWebhook(formData)
       
-      // Redirect to thank you page instead of showing toast
-      window.location.href = '/thank-you?type=signup'
+      // Redirect to Calendly instead of thank you page
+      window.location.href = getCalendlyUrl()
     } catch (error) {
-      // Even if webhook fails, redirect to thank you page
-      window.location.href = '/thank-you?type=signup'
+      // Even if webhook fails, redirect to Calendly
+      window.location.href = getCalendlyUrl()
     } finally {
       setIsSubmitting(false)
     }
