@@ -113,10 +113,12 @@ export function HeroSection() {
               <Button
                 size="lg"
                 variant="outline"
-                className="px-6 sm:px-10 py-4 sm:py-6 text-base sm:text-lg rounded-xl sm:rounded-2xl border-2 border-orange-300 text-orange-700 hover:bg-orange-50 hover:border-orange-400 font-semibold shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto"
+                className="px-6 sm:px-10 py-4 sm:py-6 text-base sm:text-lg rounded-xl sm:rounded-2xl border-2 border-orange-300 text-orange-700 hover:bg-gradient-to-r hover:from-orange-600 hover:to-amber-600 hover:text-white hover:border-orange-600 font-semibold shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto group"
                 asChild
               >
-                <Link href={getCalendlyUrl()} target="_blank" rel="noopener noreferrer">{t.hero.scheduleCall}</Link>
+                <Link href={getCalendlyUrl()} target="_blank" rel="noopener noreferrer" className="flex items-center">
+                  {t.hero.scheduleCall}
+                </Link>
               </Button>
             </div>
 
