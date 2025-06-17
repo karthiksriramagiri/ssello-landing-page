@@ -110,7 +110,7 @@ export const translations = {
       badge: "Simple Pricing",
       title: "Choose the",
       titleHighlight: "perfect plan",
-      description: "Start free and scale as you grow. No hidden fees, no setup costs.",
+      description: "Start fast and scale as you grow. No hidden fees, no setup costs.",
       payOnly: "Pay only for what you need.",
       mostPopular: "Most Popular",
       starter: {
