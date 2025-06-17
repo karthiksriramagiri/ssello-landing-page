@@ -114,60 +114,61 @@ export const translations = {
       payOnly: "Pay only for what you need.",
       mostPopular: "Most Popular",
       starter: {
-        name: "Starter",
+        name: "Starter Plan ⭐",
         description: "Perfect for new sellers testing the waters",
-        price: "Free",
-        limit: "Up to 100",
-        limitLabel: "products per month",
+        price: "$28.99",
+        period: "/month",
+        limit: "Up to 150",
+        limitLabel: "SKUs",
         features: [
-          "Access to 13+ marketplaces",
-          "Product management", 
-          "Order processing",
-          "Email support"
+          "Up to 150 SKUs",
+          "Basic Analytics",
+          "Email Support"
         ],
-        buttonText: "Start Free"
+        buttonText: "Start with Starter"
       },
       growth: {
-        name: "Growth",
+        name: "Growth Plan 🚀",
         description: "For growing businesses ready to scale",
-        price: "$39.99",
+        price: "$48.99",
         period: "/month",
-        limit: "101–1,000",
-        limitLabel: "products per month",
+        limit: "Up to 1,000",
+        limitLabel: "SKUs",
         features: [
-          "Everything in Starter",
-          "Priority customer support",
-          "Advanced analytics",
-          "Inventory management"
+          "Up to 1,000 SKUs",
+          "Advanced Analytics",
+          "Priority Support",
+          "Multi-channel Integration"
         ],
-        buttonText: "Start Growing"
+        buttonText: "Choose Growth"
       },
       pro: {
-        name: "Pro", 
+        name: "Pro Plan 💎", 
         description: "For established sellers managing high volume",
-        price: "$69.99",
+        price: "$88.99",
         period: "/month",
-        limit: "1,000–5,000",
-        limitLabel: "products per month",
+        limit: "Up to 5,000",
+        limitLabel: "SKUs",
         features: [
-          "Everything in Growth",
-          "Bulk operations",
-          "Dedicated account manager",
-          "Custom integrations"
+          "Up to 5,000 SKUs",
+          "Premium Analytics",
+          "Priority Support",
+          "Multi-channel Integration",
+          "Custom Reporting"
         ],
         buttonText: "Go Pro"
       },
       enterprise: {
-        name: "Enterprise",
+        name: "Enterprise Plan 🏢",
         description: "For large businesses with custom needs",
-        price: "Custom",
-        limit: "5,000+",
-        limitLabel: "products per month", 
+        price: "Contact Support",
+        limit: "Unlimited",
+        limitLabel: "SKUs", 
         features: [
-          "Everything in Pro",
-          "Custom pricing",
-          "Dedicated infrastructure",
-          "24/7 phone support"
+          "Unlimited SKUs",
+          "Enterprise Analytics",
+          "Dedicated Support",
+          "Custom Integrations"
         ],
         buttonText: "Contact Sales"
       },
@@ -507,60 +508,61 @@ export const translations = {
       payOnly: "Paga solo por lo que necesitas.",
       mostPopular: "Más Popular",
       starter: {
-        name: "Inicial",
+        name: "Plan Inicial ⭐",
         description: "Perfecto para nuevos vendedores probando las aguas",
-        price: "Gratis",
-        limit: "Hasta 100",
-        limitLabel: "productos por mes",
+        price: "$28.99",
+        period: "/mes",
+        limit: "Hasta 150",
+        limitLabel: "SKUs",
         features: [
-          "Acceso a 13+ marketplaces",
-          "Gestión de productos",
-          "Procesamiento de pedidos", 
-          "Soporte por email"
+          "Hasta 150 SKUs",
+          "Analíticas Básicas",
+          "Soporte por Email"
         ],
-        buttonText: "Comenzar Gratis"
+        buttonText: "Comenzar con Inicial"
       },
       growth: {
-        name: "Crecimiento",
+        name: "Plan Crecimiento 🚀",
         description: "Para negocios en crecimiento listos para escalar",
-        price: "$39.99",
+        price: "$48.99",
         period: "/mes",
-        limit: "101–1,000",
-        limitLabel: "productos por mes",
+        limit: "Hasta 1,000",
+        limitLabel: "SKUs",
         features: [
-          "Todo en Inicial",
-          "Soporte prioritario al cliente",
-          "Analíticas avanzadas",
-          "Gestión de inventario"
+          "Hasta 1,000 SKUs",
+          "Analíticas Avanzadas",
+          "Soporte Prioritario",
+          "Integración Multi-canal"
         ],
-        buttonText: "Comenzar a Crecer"
+        buttonText: "Elegir Crecimiento"
       },
       pro: {
-        name: "Pro",
+        name: "Plan Pro 💎",
         description: "Para vendedores establecidos manejando alto volumen",
-        price: "$69.99", 
+        price: "$88.99", 
         period: "/mes",
-        limit: "1,000–5,000",
-        limitLabel: "productos por mes",
+        limit: "Hasta 5,000",
+        limitLabel: "SKUs",
         features: [
-          "Todo en Crecimiento",
-          "Operaciones masivas",
-          "Gerente de cuenta dedicado",
-          "Integraciones personalizadas"
+          "Hasta 5,000 SKUs",
+          "Analíticas Premium",
+          "Soporte Prioritario",
+          "Integración Multi-canal",
+          "Reportes Personalizados"
         ],
         buttonText: "Volverse Pro"
       },
       enterprise: {
-        name: "Empresa",
+        name: "Plan Empresa 🏢",
         description: "Para grandes negocios con necesidades personalizadas",
-        price: "Personalizado",
-        limit: "5,000+",
-        limitLabel: "productos por mes",
+        price: "Contactar Soporte",
+        limit: "Ilimitado",
+        limitLabel: "SKUs",
         features: [
-          "Todo en Pro",
-          "Precios personalizados", 
-          "Infraestructura dedicada",
-          "Soporte telefónico 24/7"
+          "SKUs Ilimitados",
+          "Analíticas Empresariales",
+          "Soporte Dedicado",
+          "Integraciones Personalizadas"
         ],
         buttonText: "Contactar Ventas"
       },
@@ -896,60 +898,61 @@ export const translations = {
       payOnly: "Pague apenas pelo que precisa.",
       mostPopular: "Mais Popular",
       starter: {
-        name: "Inicial",
+        name: "Plano Inicial ⭐",
         description: "Perfeito para novos vendedores testando as águas",
-        price: "Grátis",
-        limit: "Até 100",
-        limitLabel: "produtos por mês",
+        price: "$28.99",
+        period: "/mês",
+        limit: "Até 150",
+        limitLabel: "SKUs",
         features: [
-          "Acesso a 13+ marketplaces",
-          "Gerenciamento de produtos",
-          "Processamento de pedidos",
-          "Suporte por email"
+          "Até 150 SKUs",
+          "Analíticas Básicas",
+          "Suporte por Email"
         ],
-        buttonText: "Começar Grátis"
+        buttonText: "Começar com Inicial"
       },
       growth: {
-        name: "Crescimento",
+        name: "Plano Crescimento 🚀",
         description: "Para negócios em crescimento prontos para escalar",
-        price: "$39.99",
+        price: "$48.99",
         period: "/mês",
-        limit: "101–1,000",
-        limitLabel: "produtos por mês",
+        limit: "Até 1,000",
+        limitLabel: "SKUs",
         features: [
-          "Tudo do Inicial",
-          "Suporte prioritário ao cliente",
-          "Analíticas avançadas",
-          "Gerenciamento de inventário"
+          "Até 1,000 SKUs",
+          "Analíticas Avançadas",
+          "Suporte Prioritário",
+          "Integração Multi-canal"
         ],
-        buttonText: "Começar a Crescer"
+        buttonText: "Escolher Crescimento"
       },
       pro: {
-        name: "Pro",
+        name: "Plano Pro 💎",
         description: "Para vendedores estabelecidos gerenciando alto volume",
-        price: "$69.99",
+        price: "$88.99",
         period: "/mês",
-        limit: "1,000–5,000",
-        limitLabel: "produtos por mês",
+        limit: "Até 5,000",
+        limitLabel: "SKUs",
         features: [
-          "Tudo do Crescimento",
-          "Operações em massa",
-          "Gerente de conta dedicado",
-          "Integrações personalizadas"
+          "Até 5,000 SKUs",
+          "Analíticas Premium",
+          "Suporte Prioritário",
+          "Integração Multi-canal",
+          "Relatórios Personalizados"
         ],
         buttonText: "Virar Pro"
       },
       enterprise: {
-        name: "Empresa",
+        name: "Plano Empresa 🏢",
         description: "Para grandes negócios com necessidades personalizadas",
-        price: "Personalizado",
-        limit: "5,000+",
-        limitLabel: "produtos por mês",
+        price: "Contatar Suporte",
+        limit: "Ilimitado",
+        limitLabel: "SKUs",
         features: [
-          "Tudo do Pro",
-          "Preços personalizados",
-          "Infraestrutura dedicada",
-          "Suporte telefônico 24/7"
+          "SKUs Ilimitados",
+          "Analíticas Empresariais",
+          "Suporte Dedicado",
+          "Integrações Personalizadas"
         ],
         buttonText: "Contatar Vendas"
       },
