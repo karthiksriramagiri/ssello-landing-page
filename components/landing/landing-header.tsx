@@ -59,22 +59,22 @@ export function LandingHeader() {
               <LanguageSwitcher />
             </div> */}
             <Button 
-              variant="outline"
-              className="border-slate-300 text-slate-700 hover:bg-slate-50 hover:border-slate-400 rounded-xl font-semibold transition-all duration-300 px-6 py-2.5 group" 
-              asChild
-            >
-              <Link href="https://app.ssello.com/accounts/login/?next=/dashboard/">
-                <LogIn className="w-4 h-4 mr-2 group-hover:translate-x-0.5 transition-transform duration-300" />
-                {t.nav.signIn}
-              </Link>
-            </Button>
-            <Button 
               className="bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 text-white rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 px-6 py-2.5 group" 
               asChild
             >
               <Link href="/signup">
                 <Sparkles className="w-4 h-4 mr-2 group-hover:rotate-12 transition-transform duration-300" />
                 {t.nav.getStarted}
+              </Link>
+            </Button>
+            <Button 
+              variant="outline"
+              className="border-slate-300 text-slate-700 hover:bg-orange-50 hover:border-orange-300 hover:text-orange-700 hover:shadow-md rounded-xl font-semibold transition-all duration-300 px-6 py-2.5 group" 
+              asChild
+            >
+              <Link href="https://app.ssello.com/accounts/login/?next=/dashboard/">
+                <LogIn className="w-4 h-4 mr-2 group-hover:translate-x-0.5 transition-transform duration-300" />
+                {t.nav.signIn}
               </Link>
             </Button>
           </div>
@@ -110,22 +110,22 @@ export function LandingHeader() {
             ))}
             <div className="pt-6 mt-4 border-t border-slate-200/60 space-y-3">
               <Button 
-                variant="outline"
-                className="w-full border-slate-300 text-slate-700 hover:bg-slate-50 font-semibold transition-all duration-300" 
-                asChild
-              >
-                <Link href="https://app.ssello.com/accounts/login/?next=/dashboard/">
-                  <LogIn className="w-4 h-4 mr-2" />
-                  {t.nav.signIn}
-                </Link>
-              </Button>
-              <Button 
                 className="w-full bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300" 
                 asChild
               >
                 <Link href="/signup">
                   <Sparkles className="w-4 h-4 mr-2" />
                   {t.nav.getStarted}
+                </Link>
+              </Button>
+              <Button 
+                variant="outline"
+                className="w-full border-slate-300 text-slate-700 hover:bg-orange-50 hover:border-orange-300 hover:text-orange-700 hover:shadow-md rounded-xl font-semibold transition-all duration-300" 
+                asChild
+              >
+                <Link href="https://app.ssello.com/accounts/login/?next=/dashboard/">
+                  <LogIn className="w-4 h-4 mr-2" />
+                  {t.nav.signIn}
                 </Link>
               </Button>
             </div>
