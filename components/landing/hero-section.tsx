@@ -11,19 +11,21 @@ import { getCalendlyUrl } from "@/lib/calendly"
 function AnimatedCounter({ 
   end, 
   duration = 2000, 
-  suffix = "" 
+  suffix = "",
+  from = 0
 }: { 
   end: number
   duration?: number
-  suffix?: string 
+  suffix?: string
+  from?: number
 }) {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(from)
 
   useEffect(() => {
     if (end === 0) return
 
     let startTime: number | null = null
-    const startValue = 0
+    const startValue = from
 
     const updateCount = (timestamp: number) => {
       if (!startTime) startTime = timestamp
@@ -43,6 +45,15 @@ function AnimatedCounter({
     requestAnimationFrame(updateCount)
   }, [end, duration])
 
+  // Convert to display format for B+ suffix
+  if (suffix === "B+") {
+    if (count >= 1000) {
+      return <span>1B+</span>
+    } else {
+      return <span>{count}M+</span>
+    }
+  }
+  
   return <span>{count}{suffix}</span>
 }
 
@@ -126,13 +137,13 @@ export function HeroSection() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 pt-8">
               <div className="text-center p-4 sm:p-6 bg-white/80 backdrop-blur-sm rounded-2xl border border-orange-200/50 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
                 <div className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-orange-500 to-amber-600 bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300">
-                  <AnimatedCounter end={700} suffix="M+" />
+                  <AnimatedCounter end={1000} suffix="B+" from={700} />
                 </div>
                 <div className="text-xs sm:text-sm text-slate-600 font-medium">{t.hero.consumers}</div>
               </div>
               <div className="text-center p-4 sm:p-6 bg-white/80 backdrop-blur-sm rounded-2xl border border-amber-200/50 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
                 <div className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-amber-500 to-orange-600 bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300">
-                  <AnimatedCounter end={13} suffix="+" />
+                  <AnimatedCounter end={15} suffix="+" />
                 </div>
                 <div className="text-xs sm:text-sm text-slate-600 font-medium">{t.hero.marketplaces}</div>
               </div>

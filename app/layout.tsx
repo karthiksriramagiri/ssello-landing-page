@@ -24,7 +24,7 @@ const outfit = Outfit({
 })
 
 export const metadata: Metadata = {
-  title: "ssello - Expand into LATAM with one click",
+  title: "ssello - Expand into Latin America with one click",
   description: "The complete e-commerce solution for ambitious brands. Expand your reach across 15+ marketplaces, manage operations seamlessly, and accelerate growth in Latin America's fastest-growing markets.",
   generator: 'v0.dev',
   icons: {
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     apple: '/favicon.png',
   },
   openGraph: {
-    title: "ssello - Expand into LATAM with one click",
+    title: "ssello - Expand into Latin America with one click",
     description: "The complete e-commerce solution for ambitious brands. Expand your reach across 15+ marketplaces, manage operations seamlessly, and accelerate growth in Latin America's fastest-growing markets.",
     url: 'https://ssello.com',
     siteName: 'ssello',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'ssello - Expand into LATAM with one click',
+        alt: 'ssello - Expand into Latin America with one click',
       },
     ],
     locale: 'en_US',
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "ssello - Expand into LATAM with one click",
+    title: "ssello - Expand into Latin America with one click",
     description: "The complete e-commerce solution for ambitious brands. Expand your reach across 15+ marketplaces, manage operations seamlessly, and accelerate growth in Latin America's fastest-growing markets.",
     images: ['/og-image.png'],
   },

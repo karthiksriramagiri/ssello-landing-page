@@ -72,9 +72,9 @@ const solutionDetails: SolutionDetail[] = [
     id: "orders",
     icon: ShoppingCart,
     title: "Unified Order Management",
-    subtitle: "Manage all Latin American orders seamlessly.",
+    subtitle: "Manage all Americas orders seamlessly.",
     description:
-      "Streamline your order management with our centralized system that consolidates orders from across Latin America into one easy-to-use interface. Track, process, and fulfill orders efficiently while maintaining excellent customer service standards.",
+      "Streamline your order management with our centralized system that consolidates orders from across the Americas into one easy-to-use interface. Track, process, and fulfill orders efficiently while maintaining excellent customer service standards.",
     features: [
       "Centralized order processing from all marketplaces",
       "Real-time order status tracking and updates",

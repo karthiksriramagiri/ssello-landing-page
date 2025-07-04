@@ -9,6 +9,11 @@ import { getCalendlyUrl } from "@/lib/calendly"
 
 const marketplaces = [
   {
+    id: "amazon-us",
+    name: "Amazon US",
+    logo: "/logos/amazon-us.png",
+  },
+  {
     id: "amazon-brazil",
     name: "Amazon Brazil",
     logo: "/logos/amazon-brazil.png",
@@ -17,6 +22,11 @@ const marketplaces = [
     id: "amazon-mexico", 
     name: "Amazon Mexico",
     logo: "/logos/amazon-mexico.png",
+  },
+  {
+    id: "walmart-us",
+    name: "Walmart US",
+    logo: "/logos/walmart-us.png",
   },
   {
     id: "mercadolibre",
@@ -140,10 +150,14 @@ export default function MarketplacesPage() {
                         width={180}
                         height={120}
                         className={`object-contain relative z-10 ${
-                          marketplace.id === 'amazon-brazil' 
-                            ? 'w-52 h-36' 
+                          marketplace.id === 'amazon-us' 
+                            ? 'w-28 h-18' 
+                            : marketplace.id === 'amazon-brazil' 
+                            ? 'w-48 h-32' 
                             : marketplace.id === 'amazon-mexico'
                             ? 'w-48 h-32'
+                            : marketplace.id === 'walmart-us'
+                            ? 'w-44 h-32'
                             : marketplace.id === 'claro-shop'
                             ? 'w-44 h-32'
                             : 'w-36 h-24'
@@ -201,26 +215,22 @@ export default function MarketplacesPage() {
                 {t.marketplaceSection.connectWithMillions}
               </p>
             </div>
-            
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button
-                size="lg"
-                className="bg-white text-orange-600 hover:bg-white/90 text-xl px-12 py-6 rounded-2xl font-bold shadow-2xl hover:shadow-3xl transition-all duration-300 group"
-                asChild
-              >
-                <Link href="/signup">
-                  {t.common.startSelling}
-                  <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform duration-300" />
+
+            <div className="flex flex-col sm:flex-row gap-6 justify-center max-w-lg mx-auto">
+              <Button asChild className="bg-white/20 hover:bg-white/30 text-white border-white/30 h-14 px-8 rounded-2xl backdrop-blur-sm group">
+                <Link href={getCalendlyUrl()}>
+                  <span className="flex items-center">
+                    <TrendingUp className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
+                    {t.common.startSelling}
+                  </span>
                 </Link>
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white text-orange-600 hover:bg-white hover:text-orange-600 text-lg px-10 py-6 rounded-2xl font-semibold transition-all duration-300"
-                asChild
-              >
-                <Link href={getCalendlyUrl()} target="_blank" rel="noopener noreferrer">
-                  {t.common.scheduleCall}
+              <Button variant="outline" asChild className="bg-transparent border-white/50 text-white hover:bg-white/10 h-14 px-8 rounded-2xl group">
+                <Link href={getCalendlyUrl()}>
+                  <span className="flex items-center">
+                    <ArrowRight className="w-5 h-5 mr-2 group-hover:translate-x-1 transition-transform" />
+                    {t.common.scheduleCall}
+                  </span>
                 </Link>
               </Button>
             </div>

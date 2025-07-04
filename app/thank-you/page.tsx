@@ -99,7 +99,7 @@ function ThankYouContent() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-slate-900 mb-1">Start Selling</h3>
-                      <p className="text-slate-600">Begin selling across 13+ Latin American marketplaces with full support.</p>
+                      <p className="text-slate-600">Begin selling across 15+ American marketplaces with full support.</p>
                     </div>
                   </div>
                 </>

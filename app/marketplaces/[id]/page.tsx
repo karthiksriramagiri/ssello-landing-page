@@ -9,6 +9,40 @@ import { useLanguage } from "@/contexts/language-context"
 import { getCalendlyUrl } from "@/lib/calendly"
 
 const marketplacesData = {
+  "amazon-us": {
+    name: "Amazon US",
+    logo: "/logos/amazon-us.png",
+    description: "The world's largest e-commerce marketplace with over 300 million active customers.",
+    fullDescription: "Amazon US stands as the undisputed leader in global e-commerce, offering sellers access to the world's largest marketplace with over 300 million active customers. With unparalleled reach, advanced logistics infrastructure, and trusted customer relationships, Amazon US represents the ultimate opportunity for international expansion.",
+    monthlyVisits: "2.5B+",
+    marketShare: "50%",
+    categories: ["Electronics", "Fashion", "Home & Garden", "Books", "Health & Beauty"],
+    benefits: [
+      "World's largest e-commerce marketplace",
+      "Advanced fulfillment infrastructure (FBA)",
+      "Prime membership loyalty program",
+      "Global brand recognition and trust",
+      "Comprehensive seller tools and analytics"
+    ],
+    country: "United States"
+  },
+  "walmart-us": {
+    name: "Walmart US",
+    logo: "/logos/walmart-us.png",
+    description: "America's largest retailer with a rapidly growing e-commerce platform and trusted brand.",
+    fullDescription: "Walmart US combines the power of America's largest retail chain with a rapidly expanding e-commerce platform. With over 240 million weekly customers and growing online presence, Walmart offers sellers access to a massive, diverse customer base with competitive fees and strong logistics support.",
+    monthlyVisits: "400M+",
+    marketShare: "7%",
+    categories: ["Groceries", "Electronics", "Home", "Fashion", "Health & Wellness"],
+    benefits: [
+      "America's largest retailer",
+      "Rapidly growing e-commerce presence",
+      "Competitive marketplace fees",
+      "Strong omnichannel capabilities",
+      "Trusted brand with loyal customers"
+    ],
+    country: "United States"
+  },
   "amazon-brazil": {
     name: "Amazon Brazil",
     logo: "/logos/amazon-brazil.png",

@@ -7,6 +7,8 @@ import { ArrowRight, Globe, BarChart3, Shield, Sparkles, MapPin, Package, Buildi
 import { useLanguage } from "@/contexts/language-context"
 
 const allMarketplaceLogos = [
+  { src: "/logos/amazon-us.png", name: "Amazon US" },
+  { src: "/logos/walmart-us.png", name: "Walmart US" },
   { src: "/logos/amazon-brazil.png", name: "Amazon Brazil" },
   { src: "/logos/amazon-mexico.png", name: "Amazon Mexico" },
   { src: "/logos/americanas.png", name: "Americanas" },
@@ -18,7 +20,7 @@ const allMarketplaceLogos = [
   { src: "/logos/magalu.webp", name: "Magazine Luiza" },
   { src: "/logos/mercadolibre.png", name: "MercadoLibre" },
   { src: "/logos/shopee.png", name: "Shopee" },
-  { src: "/logos/walmart.png", name: "Walmart" },
+  { src: "/logos/walmart.png", name: "Walmart Mexico" },
   { src: "/logos/tiktok-shop.webp", name: "TikTok Shop" },
 ]
 
@@ -85,8 +87,8 @@ export function FeaturesSection() {
 
         <div className="space-y-24 md:space-y-28">
           {/* Section 1: Maximize your exposure */}
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="space-y-8">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div className="space-y-8 lg:pl-8">
               <div className="space-y-6">
                 <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-orange-500 to-amber-600 text-white text-sm font-semibold shadow-lg">
                   <Globe className="h-5 w-5 mr-2" />

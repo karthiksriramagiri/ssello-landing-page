@@ -14,11 +14,11 @@ export default function PricingPage() {
       name: t.pricing.starter.name,
       description: t.pricing.starter.description,
       price: t.pricing.starter.price,
-      period: "",
+      period: t.pricing.starter.period,
       limit: t.pricing.starter.limit,
       limitLabel: t.pricing.starter.limitLabel,
       icon: Star,
-      gradient: "from-green-500 to-emerald-600",
+      gradient: "from-blue-500 to-cyan-600",
       features: t.pricing.starter.features,
       buttonText: t.pricing.starter.buttonText,
       buttonVariant: "outline" as const,
@@ -32,11 +32,11 @@ export default function PricingPage() {
       limit: t.pricing.growth.limit,
       limitLabel: t.pricing.growth.limitLabel,
       icon: Zap,
-      gradient: "from-orange-500 to-amber-600",
+      gradient: "from-green-500 to-emerald-600",
       features: t.pricing.growth.features,
       buttonText: t.pricing.growth.buttonText,
-      buttonVariant: "default" as const,
-      popular: true
+      buttonVariant: "outline" as const,
+      popular: false
     },
     {
       name: t.pricing.pro.name,
@@ -46,25 +46,11 @@ export default function PricingPage() {
       limit: t.pricing.pro.limit,
       limitLabel: t.pricing.pro.limitLabel,
       icon: Users,
-      gradient: "from-purple-500 to-indigo-600",
+      gradient: "from-orange-500 to-amber-600",
       features: t.pricing.pro.features,
       buttonText: t.pricing.pro.buttonText,
-      buttonVariant: "outline" as const,
-      popular: false
-    },
-    {
-      name: t.pricing.enterprise.name,
-      description: t.pricing.enterprise.description,
-      price: t.pricing.enterprise.price,
-      period: "",
-      limit: t.pricing.enterprise.limit,
-      limitLabel: t.pricing.enterprise.limitLabel,
-      icon: Building2,
-      gradient: "from-slate-600 to-slate-800",
-      features: t.pricing.enterprise.features,
-      buttonText: t.pricing.enterprise.buttonText,
-      buttonVariant: "outline" as const,
-      popular: false
+      buttonVariant: "default" as const,
+      popular: true
     }
   ]
 
@@ -109,7 +95,7 @@ export default function PricingPage() {
         </div>
 
         <div className="container relative z-10">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
             {pricingPlans.map((plan, index) => (
               <div key={plan.name} className={`relative group ${plan.popular ? 'lg:-mt-8' : ''}`}>
                 {plan.popular && (
@@ -120,7 +106,7 @@ export default function PricingPage() {
                   </div>
                 )}
                 
-                <div className={`bg-white/80 backdrop-blur-sm p-6 sm:p-8 rounded-3xl shadow-lg border transition-all duration-500 hover:-translate-y-2 h-full ${
+                <div className={`bg-white/80 backdrop-blur-sm p-6 sm:p-8 rounded-3xl shadow-lg border transition-all duration-500 hover:-translate-y-2 h-full flex flex-col ${
                   plan.popular 
                     ? 'border-orange-300/50 hover:shadow-2xl hover:border-orange-400/50' 
                     : 'border-slate-200/50 hover:shadow-xl hover:border-orange-300/30'
@@ -149,7 +135,7 @@ export default function PricingPage() {
                   </div>
 
                   {/* Features */}
-                  <div className="space-y-4 mb-8">
+                  <div className="space-y-4 mb-8 flex-grow">
                     {plan.features.map((feature, featureIndex) => (
                       <div key={feature} className="flex items-start gap-3">
                         <CheckCircle className={`w-5 h-5 bg-gradient-to-r ${plan.gradient} rounded-full text-white flex-shrink-0 mt-0.5`} />
@@ -160,7 +146,7 @@ export default function PricingPage() {
 
                   {/* CTA Button */}
                   <Button
-                    className={`w-full py-4 rounded-xl font-semibold transition-all duration-300 ${
+                    className={`w-full py-4 rounded-xl font-semibold transition-all duration-300 mt-auto ${
                       plan.buttonVariant === 'default'
                         ? `bg-gradient-to-r ${plan.gradient} hover:opacity-90 text-white shadow-lg hover:shadow-xl`
                         : `border-2 border-orange-400 text-orange-600 hover:bg-orange-600 hover:text-white bg-white shadow-lg hover:shadow-xl`
@@ -169,7 +155,7 @@ export default function PricingPage() {
                     size="lg"
                     asChild
                   >
-                    <Link href={plan.name === t.pricing.enterprise.name ? '/contact' : '/signup'}>
+                    <Link href="/signup">
                       {plan.buttonText}
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Link>

@@ -7,6 +7,8 @@ import { ArrowRight, Sparkles } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 
 const marketplaces = [
+  { name: "Amazon US", logo: "/logos/amazon-us.png", location: "United States" },
+  { name: "Walmart US", logo: "/logos/walmart-us.png", location: "United States" },
   { name: "Amazon Brazil", logo: "/logos/amazon-brazil.png", location: "Brazil" },
   { name: "Amazon Mexico", logo: "/logos/amazon-mexico.png", location: "Mexico" },
   { name: "Americanas", logo: "/logos/americanas.png", location: "Brazil" },
@@ -18,7 +20,7 @@ const marketplaces = [
   { name: "Magazine Luiza", logo: "/logos/magalu.webp", location: "Brazil" },
   { name: "MercadoLibre", logo: "/logos/mercadolibre.png", location: "LATAM" },
   { name: "Shopee", logo: "/logos/shopee.png", location: "LATAM" },
-  { name: "Walmart", logo: "/logos/walmart.png", location: "Mexico" },
+  { name: "Walmart Mexico", logo: "/logos/walmart.png", location: "Mexico" },
   { name: "TikTok Shop", logo: "/logos/tiktok-shop.webp", location: "LATAM" },
 ]
 
@@ -94,7 +96,7 @@ export function MarketplacesSection() {
             className="bg-gradient-to-r from-orange-500 to-amber-600 hover:from-orange-600 hover:to-amber-700 text-white px-6 sm:px-12 py-3 sm:py-6 text-base sm:text-lg rounded-xl sm:rounded-2xl font-bold shadow-xl hover:shadow-2xl transition-all duration-300 group w-full sm:w-auto"
             asChild
           >
-            <Link href="/marketplaces">
+            <Link href="/signup">
               <div className="flex items-center justify-center gap-2 sm:gap-3">
                 <div className="hidden sm:flex -space-x-2">
                   <div className="w-6 h-6 sm:w-8 sm:h-8 bg-white/20 rounded-full flex items-center justify-center text-white text-xs sm:text-sm font-bold">💰</div>

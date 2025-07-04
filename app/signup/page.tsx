@@ -7,7 +7,7 @@ import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Checkbox } from "@/components/ui/checkbox"
 import { useToast } from "@/components/ui/use-toast"
-import { Building, Sparkles, Send, Package, Globe } from "lucide-react"
+import { Building, Sparkles, Send, Package, Globe, Phone } from "lucide-react"
 import { useState, type FormEvent } from "react"
 import Link from "next/link"
 import { getCalendlyUrl } from "@/lib/calendly"
@@ -31,6 +31,7 @@ export default function SignUpPage() {
     firstName: "",
     lastName: "",
     email: "",
+    phoneNumber: "",
     companyName: "",
     shippingLocations: [] as string[],
     productType: "",
@@ -81,6 +82,10 @@ export default function SignUpPage() {
               {
                 type: "mrkdwn",
                 text: `*Email:*\n${data.email}`
+              },
+              {
+                type: "mrkdwn",
+                text: `*Phone:*\n${data.phoneNumber}`
               },
               {
                 type: "mrkdwn",
@@ -152,9 +157,8 @@ export default function SignUpPage() {
             Join ssello
           </div>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight mb-8">
-            Start your{" "}
             <span className="bg-gradient-to-r from-orange-600 via-amber-600 to-orange-700 bg-clip-text text-transparent">
-              LATAM journey
+              Start Your Online Expansion
             </span>
           </h1>
           <p className="mt-6 text-xl md:text-2xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
@@ -231,7 +235,8 @@ export default function SignUpPage() {
                   </div>
                 </div>
 
-                {/* Email */}
+                {/* Email and Phone */}
+                <div className="grid sm:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <Label htmlFor="email" className="text-sm font-semibold">Email Address *</Label>
                   <Input
@@ -244,6 +249,23 @@ export default function SignUpPage() {
                     required
                     className="h-12 border-slate-300 focus:border-orange-500 focus:ring-orange-500/20 transition-all duration-300"
                   />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="phoneNumber" className="text-sm font-semibold">Phone Number *</Label>
+                    <div className="relative">
+                      <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-slate-400" />
+                      <Input
+                        id="phoneNumber"
+                        name="phoneNumber"
+                        type="tel"
+                        value={formData.phoneNumber}
+                        onChange={handleInputChange}
+                        placeholder="+1 (555) 000-0000"
+                        required
+                        className="h-12 pl-10 border-slate-300 focus:border-orange-500 focus:ring-orange-500/20 transition-all duration-300"
+                      />
+                    </div>
+                  </div>
                 </div>
 
                 {/* Company Name */}

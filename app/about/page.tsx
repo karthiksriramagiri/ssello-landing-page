@@ -123,7 +123,7 @@ export default function AboutPage() {
             <div className="space-y-6">
               <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-orange-200/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <div className="text-5xl font-bold bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent mb-4">
-                  700M+
+                  1B+
                 </div>
                 <div className="text-xl font-semibold text-slate-900 mb-3">{t.about.marketOpportunity.activeConsumers}</div>
                 <div className="text-slate-600 leading-relaxed">{t.about.marketOpportunity.activeConsumersDesc}</div>
@@ -139,7 +139,7 @@ export default function AboutPage() {
               
               <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-orange-200/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <div className="text-5xl font-bold bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent mb-4">
-                  13+
+                  15+
                 </div>
                 <div className="text-xl font-semibold text-slate-900 mb-3">{t.about.marketOpportunity.topMarketplaces}</div>
                 <div className="text-slate-600 leading-relaxed">{t.about.marketOpportunity.topMarketplacesDesc}</div>
