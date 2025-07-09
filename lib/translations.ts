@@ -114,8 +114,7 @@ export const translations = {
         limit: "Free until your first sale",
         limitLabel: "",
         features: [
-          "US Marketplace Access",
-          "15+ LATAM Marketplaces",
+          "All US + LATAM Marketplaces",
           "1 Store Only",
           "Basic Analytics",
           "Email Support"
@@ -127,14 +126,11 @@ export const translations = {
         description: "For established businesses ready to scale across all markets",
         price: "Custom",
         period: "pricing",
-        limit: "US + LATAM",
-        limitLabel: "All Markets",
+        limit: "",
+        limitLabel: "",
         features: [
-          "All US Marketplaces",
-          "All LATAM Marketplaces",
           "Unlimited Stores",
           "Based on SKU/Store Count",
-          "Advanced Analytics",
           "Priority Support",
           "Dedicated Account Manager"
         ],
