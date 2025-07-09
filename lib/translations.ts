@@ -114,50 +114,53 @@ export const translations = {
       payOnly: "Pay only for what you need.",
       mostPopular: "Most Popular",
       starter: {
-        name: "US Marketplaces 🇺🇸",
-        description: "Perfect for businesses targeting US customers",
-        price: "$59",
+        name: "Growth Plan 🚀",
+        description: "Perfect for new sellers starting their expansion",
+        price: "$59.99",
         period: "/month",
-        limit: "US Markets",
-        limitLabel: "Only",
+        limit: "Until your first sale",
+        limitLabel: "then $79.99/month",
         features: [
-          "Access to US Marketplaces",
-          "Discounted Shipping Rates",
-          "Priority Customer Support",
-          "Real-time Analytics"
+          "US Marketplace Access",
+          "15+ LATAM Marketplaces",
+          "1 Store Only",
+          "Basic Analytics",
+          "Email Support"
         ],
-        buttonText: "Start with US"
+        buttonText: "Start Growing"
       },
       growth: {
-        name: "LATAM Marketplaces 🌎",
-        description: "Ideal for businesses expanding into Latin America",
-        price: "$99",
-        period: "/month",
-        limit: "LATAM Markets",
-        limitLabel: "Only",
+        name: "Scale Plan - Enterprise 💎",
+        description: "For established businesses ready to scale across all markets",
+        price: "Custom",
+        period: "pricing",
+        limit: "US + LATAM",
+        limitLabel: "All Markets",
         features: [
-          "Access to LATAM Marketplaces",
-          "Customs & International Shipping Handled",
-          "Priority Customer Support",
-          "Real-time Analytics"
+          "All US Marketplaces",
+          "All LATAM Marketplaces",
+          "Unlimited Stores",
+          "Based on SKU/Store Count",
+          "Advanced Analytics",
+          "Priority Support",
+          "Dedicated Account Manager"
         ],
-        buttonText: "Choose LATAM"
+        buttonText: "Contact Sales"
       },
       pro: {
-        name: "Complete Expansion 🚀", 
-        description: "Complete marketplace coverage across Latin America",
-        price: "$59",
-        period: "/month",
-        limit: "All Americas",
-        limitLabel: "Markets",
+        name: "Coming Soon 🌟", 
+        description: "More plans coming to fit every business size",
+        price: "TBA",
+        period: "",
+        limit: "Stay tuned",
+        limitLabel: "for updates",
         features: [
-          "Access to All US Marketplaces",
-          "Access to All LATAM Marketplaces",
-          "Discounted Shipping + Full Logistics",
-          "Priority Customer Support",
-          "Advanced Analytics & Reporting"
+          "Additional marketplace access",
+          "Enhanced features",
+          "More customization options",
+          "Flexible pricing models"
         ],
-        buttonText: "Expand Americas"
+        buttonText: "Get Notified"
       },
       ctaTitle: "Ready to Start Selling Online?",
       ctaSubtitle: "expansion today",
@@ -495,63 +498,53 @@ export const translations = {
       payOnly: "Paga solo por lo que necesitas.",
       mostPopular: "Más Popular",
       starter: {
-        name: "Plan Inicial ⭐",
-        description: "Perfecto para nuevos vendedores probando las aguas",
-        price: "$28.99",
+        name: "Plan Crecimiento 🚀",
+        description: "Perfecto para nuevos vendedores iniciando su expansión",
+        price: "$59.99",
         period: "/mes",
-        limit: "Hasta 150",
-        limitLabel: "SKUs",
+        limit: "Hasta tu primera venta",
+        limitLabel: "luego $79.99/mes",
         features: [
-          "Hasta 150 SKUs",
+          "Acceso a Marketplace de EE.UU.",
+          "15+ Marketplaces de LATAM",
+          "Solo 1 Tienda",
           "Analíticas Básicas",
           "Soporte por Email"
         ],
-        buttonText: "Comenzar con Inicial"
+        buttonText: "Comenzar a Crecer"
       },
       growth: {
-        name: "Plan Crecimiento 🚀",
-        description: "Para negocios en crecimiento listos para escalar",
-        price: "$48.99",
-        period: "/mes",
-        limit: "Hasta 1,000",
-        limitLabel: "SKUs",
+        name: "Plan Escala - Empresa 💎",
+        description: "Para negocios establecidos listos para escalar en todos los mercados",
+        price: "Personalizado",
+        period: "precios",
+        limit: "EE.UU. + LATAM",
+        limitLabel: "Todos los Mercados",
         features: [
-          "Hasta 1,000 SKUs",
+          "Todos los Marketplaces de EE.UU.",
+          "Todos los Marketplaces de LATAM",
+          "Tiendas Ilimitadas",
+          "Basado en SKU/Número de Tiendas",
           "Analíticas Avanzadas",
           "Soporte Prioritario",
-          "Integración Multi-canal"
-        ],
-        buttonText: "Elegir Crecimiento"
-      },
-      pro: {
-        name: "Plan Pro 💎",
-        description: "Para vendedores establecidos manejando alto volumen",
-        price: "$88.99", 
-        period: "/mes",
-        limit: "Hasta 5,000",
-        limitLabel: "SKUs",
-        features: [
-          "Hasta 5,000 SKUs",
-          "Analíticas Premium",
-          "Soporte Prioritario",
-          "Integración Multi-canal",
-          "Reportes Personalizados"
-        ],
-        buttonText: "Volverse Pro"
-      },
-      enterprise: {
-        name: "Plan Empresa 🏢",
-        description: "Para grandes negocios con necesidades personalizadas",
-        price: "Contactar Soporte",
-        limit: "Ilimitado",
-        limitLabel: "SKUs",
-        features: [
-          "SKUs Ilimitados",
-          "Analíticas Empresariales",
-          "Soporte Dedicado",
-          "Integraciones Personalizadas"
+          "Gerente de Cuenta Dedicado"
         ],
         buttonText: "Contactar Ventas"
+      },
+      pro: {
+        name: "Próximamente 🌟",
+        description: "Más planes en camino para cada tamaño de negocio",
+        price: "Por Anunciar",
+        period: "",
+        limit: "Mantente atento",
+        limitLabel: "a las actualizaciones",
+        features: [
+          "Acceso adicional a marketplaces",
+          "Características mejoradas",
+          "Más opciones de personalización",
+          "Modelos de precios flexibles"
+        ],
+        buttonText: "Ser Notificado"
       },
       ctaTitle: "¿Listo para Comenzar a Vender?",
       ctaSubtitle: "expansión hoy",
@@ -1146,7 +1139,7 @@ export const translations = {
       joinThousands: "Junte-se a milhares de vendedores que já escalaram seus negócios com nossa plataforma tudo-em-um.",
       expandYourReach: "Expanda seu alcance",
       acrossLatinAmerica: "pela América Latina",
-      expandIntoLatam: "Expándete a LATAM",
+      expandIntoLatam: "Expand into LATAM",
       withOneClick: "con un clic",
       startSellingToday: "Começar a Vender Hoje",
       getStarted: "Começar",
@@ -2679,15 +2672,15 @@ export const translations = {
       allRightsReserved: "모든 권리 보유",
       builtForLatam: "라틴아메리카 확장을 위해 건설됨",
       readyToExpandPlatforms: "모든 플랫폼에서 확장할 준비가 되었나요?",
-      joinThousands: "Junte-se a milhares de vendedores que já escalaram seus negócios com nossa plataforma tudo-em-um.",
-      expandYourReach: "Expanda seu alcance",
-      acrossLatinAmerica: "a través de América Latina",
-      expandIntoLatam: "Expándete a LATAM",
-      withOneClick: "con un clic",
-      startSellingToday: "Começar a Vender Hoje",
-      getStarted: "Começar",
-      learnMore: "Saber Mais",
-      ourTeam: "Nossa equipe de ex-vendedores está aqui para responder suas perguntas e ajudá-lo a começar a vender na América Latina."
+      joinThousands: "올인원 플랫폼으로 이미 비즈니스를 확장한 수천 명의 판매자에 합류하세요.",
+      expandYourReach: "도달 범위 확장",
+      acrossLatinAmerica: "라틴아메리카 전체에",
+      expandIntoLatam: "라틴아메리카로 확장",
+      withOneClick: "원클릭으로",
+      startSellingToday: "오늘 판매 시작",
+      getStarted: "시작하기",
+      learnMore: "더 알아보기",
+      ourTeam: "전직 판매자 출신 팀이 귀하의 질문에 답하고 라틴아메리카에서 판매를 시작하도록 도와드립니다."
     },
     // Testimonials Section
     testimonials: {
