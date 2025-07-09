@@ -21,8 +21,8 @@ export default function PricingPage() {
       gradient: "from-blue-500 to-cyan-600",
       features: t.pricing.starter.features,
       buttonText: t.pricing.starter.buttonText,
-      buttonVariant: "outline" as const,
-      popular: false
+      buttonVariant: "default" as const,
+      popular: true
     },
     {
       name: t.pricing.growth.name,
@@ -31,26 +31,12 @@ export default function PricingPage() {
       period: t.pricing.growth.period,
       limit: t.pricing.growth.limit,
       limitLabel: t.pricing.growth.limitLabel,
-      icon: Zap,
+      icon: Building2,
       gradient: "from-green-500 to-emerald-600",
       features: t.pricing.growth.features,
       buttonText: t.pricing.growth.buttonText,
       buttonVariant: "outline" as const,
       popular: false
-    },
-    {
-      name: t.pricing.pro.name,
-      description: t.pricing.pro.description,
-      price: t.pricing.pro.price,
-      period: t.pricing.pro.period,
-      limit: t.pricing.pro.limit,
-      limitLabel: t.pricing.pro.limitLabel,
-      icon: Users,
-      gradient: "from-orange-500 to-amber-600",
-      features: t.pricing.pro.features,
-      buttonText: t.pricing.pro.buttonText,
-      buttonVariant: "default" as const,
-      popular: true
     }
   ]
 
@@ -95,7 +81,7 @@ export default function PricingPage() {
         </div>
 
         <div className="container relative z-10">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-4xl mx-auto">
             {pricingPlans.map((plan, index) => (
               <div key={plan.name} className={`relative group ${plan.popular ? 'lg:-mt-8' : ''}`}>
                 {plan.popular && (
@@ -128,9 +114,12 @@ export default function PricingPage() {
                           <span className="text-slate-600 ml-1">{plan.period}</span>
                         )}
                       </div>
-                      <div className="text-sm text-slate-600 mt-2">
-                        <span className="font-semibold">{plan.limit}</span> {plan.limitLabel}
-                      </div>
+                      {plan.limit && (
+                        <div className="text-sm text-slate-600 mt-2">
+                          <span className="font-semibold">{plan.limit}</span>
+                          {plan.limitLabel && <span> {plan.limitLabel}</span>}
+                        </div>
+                      )}
                     </div>
                   </div>
 

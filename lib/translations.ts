@@ -109,10 +109,10 @@ export const translations = {
       starter: {
         name: "Growth Plan 🚀",
         description: "Perfect for new sellers starting their expansion",
-        price: "$59.99",
+        price: "$79.99",
         period: "/month",
-        limit: "Until your first sale",
-        limitLabel: "then $79.99/month",
+        limit: "Free until your first sale",
+        limitLabel: "",
         features: [
           "US Marketplace Access",
           "15+ LATAM Marketplaces",
@@ -123,7 +123,7 @@ export const translations = {
         buttonText: "Start Growing"
       },
       growth: {
-        name: "Scale Plan - Enterprise 💎",
+        name: "Scale Plan 💎",
         description: "For established businesses ready to scale across all markets",
         price: "Custom",
         period: "pricing",
@@ -139,21 +139,6 @@ export const translations = {
           "Dedicated Account Manager"
         ],
         buttonText: "Contact Sales"
-      },
-      pro: {
-        name: "Coming Soon 🌟", 
-        description: "More plans coming to fit every business size",
-        price: "TBA",
-        period: "",
-        limit: "Stay tuned",
-        limitLabel: "for updates",
-        features: [
-          "Additional marketplace access",
-          "Enhanced features",
-          "More customization options",
-          "Flexible pricing models"
-        ],
-        buttonText: "Get Notified"
       },
       ctaTitle: "Ready to Start Selling Online?",
       ctaSubtitle: "expansion today",
