@@ -139,20 +139,24 @@ export function FeaturesSection() {
               <div className="space-y-6">
                 <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-amber-500 to-orange-600 text-white text-sm font-semibold shadow-lg">
                   <Shield className="h-5 w-5 mr-2" />
-                  {t.features.section2.focusBadge}
+                  {t.features.section2.badge}
                 </div>
                 <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
                   <span className="bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 bg-clip-text text-transparent">
-                    {t.features.section2.shipToUs}
+                    {t.features.section2.title}
                   </span>{" "}
-                  {t.features.section2.weHandleRest}
+                  {t.features.section2.subtitle}
                 </h3>
                 <p className="text-lg md:text-xl text-slate-700 leading-relaxed">
-                  {t.features.section2.shipToUsDescription}
+                  {t.features.section2.description}
                 </p>
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="space-y-6">
+                <h4 className="text-2xl md:text-3xl font-bold text-slate-900 text-center">
+                  Smart shipping solutions for everyone
+                </h4>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {barriers.map((barrier, index) => (
                   <div key={barrier.title} className="p-4 bg-white/80 backdrop-blur-sm rounded-xl border border-orange-200/30 shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-105">
                     <div className="flex items-start gap-3">
@@ -166,6 +170,7 @@ export function FeaturesSection() {
                     </div>
                   </div>
                 ))}
+                </div>
               </div>
             </div>
             

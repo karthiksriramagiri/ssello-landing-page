@@ -14,7 +14,7 @@ export const translations = {
     // Hero Section
     hero: {
       badge: "#1 E-commerce Platform for LATAM",
-      title: "Expand into LATAM", 
+      title: "Expand into Latin America", 
       subtitle: "with one click",
       description: "Complete e-commerce solution for ambitious brands. Expand your reach through 15+ marketplaces, manage operations seamlessly, and accelerate growth in Latin America's fastest-growing markets.",
       startSelling: "Start Selling",
@@ -370,7 +370,7 @@ export const translations = {
     // Hero Section  
     hero: {
       badge: "Plataforma de E-commerce #1 en LATAM",
-      title: "Expándete a LATAM", 
+      title: "Expándete a América Latina", 
       subtitle: "con un clic",
       description: "La solución completa de e-commerce para marcas ambiciosas. Amplía tu alcance a través de más de 15 marketplaces, gestiona operaciones sin problemas y acelera el crecimiento en los mercados de más rápido crecimiento de América Latina.",
       startSelling: "Comenzar a Vender",
