@@ -20,11 +20,6 @@ export default function AboutPage() {
       ...t.about.team.jason,
       image: "/images/team/jason.jpeg",
       gradient: "from-green-500 to-emerald-500"
-    },
-    {
-      ...t.about.team.collins,
-      image: "/images/team/collins.jpeg",
-      gradient: "from-purple-500 to-pink-500"
     }
   ]
 
@@ -177,7 +172,7 @@ export default function AboutPage() {
             </p>
           </div>
           
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {teamMembers.map((member, index) => (
               <div key={member.name} className="group">
                 <div className="bg-white/80 backdrop-blur-sm p-8 rounded-3xl shadow-lg border border-slate-200/50 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 h-full">

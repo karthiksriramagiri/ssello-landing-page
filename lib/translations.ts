@@ -191,17 +191,6 @@ export const translations = {
             "Expert in 3PL coordination, warehouse routing, last-mile delivery",
             "API-driven integrations with global marketplaces"
           ]
-        },
-        collins: {
-          name: "Collins Omweri",
-          role: "CSO & Co-Founder",
-          education: "eCommerce Strategic Growth Expert",
-          highlights: [
-            "8+ years hands-on experience in marketplace growth",
-            "Built and scaled multiple 7-figure stores", 
-            "Expert across Amazon, Shopify, and Walmart platforms",
-            "Deep understanding of SMB challenges and growth strategies"
-          ]
         }
       },
       
